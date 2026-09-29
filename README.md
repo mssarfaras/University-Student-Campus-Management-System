@@ -9,9 +9,9 @@ A comprehensive, zero-dependency Java Console Application designed to manage uni
 | Member Name | Student ID | Designated Module / Responsibility | Key Contributions |
 | :--- | :--- | :--- | :--- |
 | **Member 1** | *[Insert ID]* | Linked List Implementation & Student Record Management | Implemented `CustomLinkedList.java`, student CRUD logic (Add, Update, Delete, Search), and tabular display formatting. |
-| **J. Nisath** | 23da2-727 | Stack & Queue Implementation & Service Request Management | Implemented `StudentStack.java` for action history/undo tracking and `ServiceQueue.java` for service request processing. |
+| **J. Nisath** | 23da2-0684 | Stack & Queue Implementation & Service Request Management | Implemented `StudentStack.java` for action history/undo tracking and `ServiceQueue.java` for service request processing. |
 | **Member 3** | *[Insert ID]* | Binary Search Tree & Hash Table Implementation | Implemented `StudentBST.java` (In-Order, Pre-Order traversals) and `StudentHashTable.java` for $O(1)$ lookup by ID. |
-| **Member 4** | 23da2-0684 | Graph Implementation & Campus Network Traversal | Implemented `CampusGraph.java` (Adjacency List), vertex/edge management, and BFS & DFS graph traversals. |
+| **Member 4** | 23da2- | Graph Implementation & Campus Network Traversal | Implemented `CampusGraph.java` (Adjacency List), vertex/edge management, and BFS & DFS graph traversals. |
 | **All Members** | *All IDs* | System Integration, Testing, Validation & Documentation | Integration of all components in `Main.java`, input validation, testing, code comments, and final README documentation. |
 
 ---
