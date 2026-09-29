@@ -9,9 +9,9 @@ A comprehensive, zero-dependency Java Console Application designed to manage uni
 | Member Name | Student ID | Designated Module / Responsibility | Key Contributions |
 | :--- | :--- | :--- | :--- |
 | **Member 1** | *[Insert ID]* | Linked List Implementation & Student Record Management | Implemented `CustomLinkedList.java`, student CRUD logic (Add, Update, Delete, Search), and tabular display formatting. |
-| **Member 2** | *[Insert ID]* | Stack & Queue Implementation & Service Request Management | Implemented `CustomStack.java` for action history/undo tracking and `CustomQueue.java` for service request processing. |
+| **J. Nisath** | 23da2-727 | Stack & Queue Implementation & Service Request Management | Implemented `StudentStack.java` for action history/undo tracking and `ServiceQueue.java` for service request processing. |
 | **Member 3** | *[Insert ID]* | Binary Search Tree & Hash Table Implementation | Implemented `StudentBST.java` (In-Order, Pre-Order traversals) and `StudentHashTable.java` for $O(1)$ lookup by ID. |
-| **Member 4** | *[Insert ID]* | Graph Implementation & Campus Network Traversal | Implemented `CampusGraph.java` (Adjacency List), vertex/edge management, and BFS & DFS graph traversals. |
+| **Member 4** | 23da2-0684 | Graph Implementation & Campus Network Traversal | Implemented `CampusGraph.java` (Adjacency List), vertex/edge management, and BFS & DFS graph traversals. |
 | **All Members** | *All IDs* | System Integration, Testing, Validation & Documentation | Integration of all components in `Main.java`, input validation, testing, code comments, and final README documentation. |
 
 ---
@@ -23,14 +23,14 @@ A comprehensive, zero-dependency Java Console Application designed to manage uni
 - **Operations**: `add()`, `update()`, `delete()`, `search()`, `displayAll()`.
 - **Complexity**: Search/Delete $O(N)$, Append $O(N)$ or $O(1)$.
 
-### 2. LIFO Action Stack (`CustomStack.java`)
+### 2. LIFO Action Stack (`StudentStack.java`)
 - **Purpose**: Maintains a history log of recent system operations for audit trails and undo capabilities.
-- **Operations**: `push()`, `pop()`, `peek()`, `displayHistory()`.
+- **Operations**: `push()`, `pop()`, `peek()`, `isEmpty()`, `display()`.
 - **Complexity**: Push/Pop $O(1)$.
 
-### 3. FIFO Service Request Queue (`CustomQueue.java`)
+### 3. FIFO Service Request Queue (`ServiceQueue.java`)
 - **Purpose**: Manages incoming student service requests (e.g., transcript issuing, ID card renewals) in order of arrival.
-- **Operations**: `enqueue()`, `dequeue()`, `peek()`, `displayQueue()`.
+- **Operations**: `enqueue()`, `dequeue()`, `peek()`, `isEmpty()`, `displayPendingRequests()`.
 - **Complexity**: Enqueue/Dequeue $O(1)$.
 
 ### 4. Binary Search Tree (`StudentBST.java`)
@@ -60,8 +60,8 @@ A comprehensive, zero-dependency Java Console Application designed to manage uni
 | :--- | :--- | :---: |
 | **1. Student Record Fields** | ID, Name, Programme, Marks in `Student.java` | ✅ Complete |
 | **2. Linked List** | Storage and display via `CustomLinkedList.java` | ✅ Complete |
-| **3. Stack History** | Action logging via `CustomStack.java` | ✅ Complete |
-| **4. Service Queue** | Arrival-ordered processing via `CustomQueue.java` | ✅ Complete |
+| **3. Stack History** | Action logging via `StudentStack.java` | ✅ Complete |
+| **4. Service Queue** | Arrival-ordered processing via `ServiceQueue.java` | ✅ Complete |
 | **5. BST / AVL Tree** | ID-ordered tree structure via `StudentBST.java` | ✅ Complete |
 | **6. Hash Table** | $O(1)$ lookup searching via `StudentHashTable.java` | ✅ Complete |
 | **7. Campus Graph** | Locations & connections via `CampusGraph.java` | ✅ Complete |

@@ -2,8 +2,8 @@ package com.university.campus.app;
 
 import com.university.campus.datastructures.CampusGraph;
 import com.university.campus.datastructures.CustomLinkedList;
-import com.university.campus.datastructures.CustomQueue;
-import com.university.campus.datastructures.CustomStack;
+import com.university.campus.datastructures.ServiceQueue;
+import com.university.campus.datastructures.StudentStack;
 import com.university.campus.datastructures.StudentBST;
 import com.university.campus.datastructures.StudentHashTable;
 import com.university.campus.model.ActionLog;
@@ -19,8 +19,8 @@ import java.util.Scanner;
 public class Main {
 
     private static CustomLinkedList studentLinkedList = new CustomLinkedList();
-    private static CustomStack actionStack = new CustomStack();
-    private static CustomQueue serviceQueue = new CustomQueue();
+    private static StudentStack actionStack = new StudentStack();
+    private static ServiceQueue serviceQueue = new ServiceQueue();
     private static StudentBST studentBST = new StudentBST();
     private static StudentHashTable studentHashTable = new StudentHashTable(16);
     private static CampusGraph campusGraph = new CampusGraph();
@@ -312,7 +312,7 @@ public class Main {
     // =========================================================================
     private static void displayRecentActionsStack() {
         System.out.println(">>> [7] RECENT SYSTEM ACTIONS (STACK HISTORY) <<<");
-        actionStack.displayHistory();
+        actionStack.display();
     }
 
     // =========================================================================

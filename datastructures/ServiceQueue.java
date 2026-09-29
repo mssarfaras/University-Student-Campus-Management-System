@@ -3,10 +3,9 @@ package com.university.campus.datastructures;
 import com.university.campus.model.ServiceRequest;
 
 /**
- * Custom FIFO Queue implementation for managing student service requests.
- * Solves Requirement 4.
+ * FIFO queue implementation for managing student service requests.
  */
-public class CustomQueue {
+public class ServiceQueue {
 
     private static class Node {
         ServiceRequest data;
@@ -22,15 +21,12 @@ public class CustomQueue {
     private Node rear;
     private int size;
 
-    public CustomQueue() {
+    public ServiceQueue() {
         this.front = null;
         this.rear = null;
         this.size = 0;
     }
 
-    /**
-     * Adds a new service request to the end of the queue.
-     */
     public void enqueue(ServiceRequest request) {
         if (request == null) return;
         Node newNode = new Node(request);
@@ -44,9 +40,6 @@ public class CustomQueue {
         size++;
     }
 
-    /**
-     * Dequeues and returns the next pending service request (FIFO order).
-     */
     public ServiceRequest dequeue() {
         if (isEmpty()) {
             return null;
@@ -60,31 +53,19 @@ public class CustomQueue {
         return data;
     }
 
-    /**
-     * Peeks at the next service request without removing it.
-     */
     public ServiceRequest peek() {
         return isEmpty() ? null : front.data;
     }
 
-    /**
-     * Checks if queue is empty.
-     */
     public boolean isEmpty() {
         return front == null;
     }
 
-    /**
-     * Returns size of queue.
-     */
     public int size() {
         return size;
     }
 
-    /**
-     * Displays all pending service requests in arrival order.
-     */
-    public void displayQueue() {
+    public void displayPendingRequests() {
         if (isEmpty()) {
             System.out.println("  [!] Queue is empty. No pending student service requests.");
             return;

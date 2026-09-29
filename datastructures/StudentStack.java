@@ -3,10 +3,9 @@ package com.university.campus.datastructures;
 import com.university.campus.model.ActionLog;
 
 /**
- * Custom LIFO Stack implementation for system action history & recent logs.
- * Solves Requirement 3.
+ * LIFO stack implementation for system action history and recent logs.
  */
-public class CustomStack {
+public class StudentStack {
 
     private static class Node {
         ActionLog data;
@@ -21,14 +20,11 @@ public class CustomStack {
     private Node top;
     private int size;
 
-    public CustomStack() {
+    public StudentStack() {
         this.top = null;
         this.size = 0;
     }
 
-    /**
-     * Pushes an ActionLog onto the stack.
-     */
     public void push(ActionLog log) {
         if (log == null) return;
         Node newNode = new Node(log);
@@ -37,9 +33,6 @@ public class CustomStack {
         size++;
     }
 
-    /**
-     * Pops and returns the top ActionLog from the stack.
-     */
     public ActionLog pop() {
         if (isEmpty()) {
             return null;
@@ -50,31 +43,19 @@ public class CustomStack {
         return data;
     }
 
-    /**
-     * Peeks at the top ActionLog without removing it.
-     */
     public ActionLog peek() {
         return isEmpty() ? null : top.data;
     }
 
-    /**
-     * Returns true if stack is empty.
-     */
     public boolean isEmpty() {
         return top == null;
     }
 
-    /**
-     * Returns number of elements in stack.
-     */
     public int size() {
         return size;
     }
 
-    /**
-     * Displays all action logs from most recent to oldest.
-     */
-    public void displayHistory() {
+    public void display() {
         if (isEmpty()) {
             System.out.println("  [!] Action history stack is empty. No recent actions logged.");
             return;
